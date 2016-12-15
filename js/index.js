@@ -20,6 +20,24 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+		
+		var permissions = cordova.plugins.permissions;
+		permissions.hasPermission(permissions.CAMERA, checkPermissionCallback, null);
+
+		function checkPermissionCallback(status) {
+		  if(!status.hasPermission) {
+			var errorCallback = function() {
+			  console.warn('Camera permission is not turned on');
+			}
+
+			permissions.requestPermission(
+			  permissions.CAMERA,
+			  function(status) {
+				if(!status.hasPermission) errorCallback();
+			  },
+			  errorCallback);
+		  }
+		}
     },
     // Bind Event Listeners
     //
