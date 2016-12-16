@@ -11,12 +11,14 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
-    <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" >
+    
+	<plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" >
 	        <variable name="CAMERA_USAGE_DESCRIPTION" value="Barcode would like to access your camera to let you take a new profile picture." />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Barcode would like to access your photo library to let you select a profile picture." />
 
 	</plugin>
-    <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
+    <plugin name="phonegap-plugin-barcodescanner" source="npm" spec="~2.1.1" >
+	<plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
     <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1" />
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
