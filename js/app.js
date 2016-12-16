@@ -24,7 +24,11 @@ function startScan() {
     console.error("The following error occurred: "+error);
 	//alert("The following error occurred: "+error);
 });*/
-	cordova.plugins.barcodeScanner.scan(
+	if (cordova && cordova.plugins)
+		alert("plugins available: " );
+	else if (window.cordova && window.cordova.plugins)
+		alert("window plugins available: " );		
+	/*cordova.plugins.barcodeScanner.scan(
 		function (result) {
 					alert("Scanning success: " );
 			var s = "Result: " + result.text + "<br/>" +
@@ -35,6 +39,6 @@ function startScan() {
 		function (error) {
 			alert("Scanning failed: " + error);
 		}
-	);
+	);*/
 
 }
