@@ -9,7 +9,9 @@ function init() {
 
 	document.querySelector("#startScan").addEventListener("touchend", startScan, false);
 	resultDiv = document.querySelector("#results");
-	
+	window.onerror = function(error, file, line) {
+  alert(error + ", " + file + ", " + line);
+}
 
 }
 
