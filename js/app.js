@@ -34,7 +34,7 @@ function startScan() {
 	
 	 if (window.cordova && window.cordova.plugins)
 		alert("window plugins available: " );		
-	/*cordova.plugins.barcodeScanner.scan(
+	cordova.plugins.barcodeScanner.scan(
 		function (result) {
 					alert("Scanning success: " );
 			var s = "Result: " + result.text + "<br/>" +
@@ -45,6 +45,6 @@ function startScan() {
 		function (error) {
 			alert("Scanning failed: " + error);
 		}
-	);*/
+	);
 
 }
