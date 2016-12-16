@@ -24,6 +24,7 @@ function startScan() {
 });*/
 	cordova.plugins.barcodeScanner.scan(
 		function (result) {
+					alert("Scanning success: " );
 			var s = "Result: " + result.text + "<br/>" +
 			"Format: " + result.format + "<br/>" +
 			"Cancelled: " + result.cancelled;
