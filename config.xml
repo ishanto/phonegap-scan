@@ -13,7 +13,6 @@
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.2" />
     
 	<plugin name="cordova-plugin-camera" source="npm" spec="~2.3.0" />
-	<plugin name="phonegap-plugin-barcodescanner" source="npm" spec="~2.3.0" />
 	<plugin name="cordova-plugin-barcodescanner" source="npm" spec="~2.3.0" />
 	
 	
