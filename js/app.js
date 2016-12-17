@@ -33,6 +33,9 @@ function startScan() {
 	}
 	
 	 if (window.cordova && window.cordova.plugins)
+		alert("window cordova plugins available: " );		
+	
+	if (window.plugins)
 		alert("window plugins available: " );		
 	cordova.plugins.barcodeScanner.scan(
 		function (result) {
