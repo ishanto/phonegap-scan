@@ -9,6 +9,15 @@ function init() {
 
 	document.querySelector("#startScan").addEventListener("touchend", startScan, false);
 	resultDiv = document.querySelector("#results");
+	
+	if (cordova){
+		alert("cordova available: " );
+		if( cordova.plugins)
+		alert("plugins available: " );
+	}else{
+		alert("cordova unavailable: " );
+	}
+	
 	window.onerror = function(error, file, line) {
   alert(error + ", " + file + ", " + line);
 }
